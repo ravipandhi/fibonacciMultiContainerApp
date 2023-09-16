@@ -3,5 +3,5 @@ WORKDIR '/app'
 COPY package.json .
 RUN npm install
 COPY . .
-RUN npm run start
+CMD ["npm", "run", "start"]
 #no nginx server needed because the above command start a node server
